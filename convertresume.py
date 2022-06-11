@@ -12,7 +12,7 @@ pPath = directory+R"\poppler-22.04.0\Library\bin"
 
 def convert():
 	for arg in sys.argv[1:]:
-		t = 0
+		t = 1
 		pages = convert_from_path(arg, 500,poppler_path=pPath)
 		for page in pages:
 			page.save('resume'+str(t)+'.png','PNG')
